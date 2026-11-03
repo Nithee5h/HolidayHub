@@ -1,0 +1,55 @@
+/* Status badges */
+.status-badges { display: inline-flex; flex-wrap: wrap; gap: 0.4rem; }
+.status-badge { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.25rem 0.7rem; font-size: var(--hh-fs-xs); font-weight: 700; border-radius: var(--hh-radius-pill); }
+.status-badge--success { color: #05603a; background: #d1fadf; }
+.status-badge--warning { color: #93370d; background: #fef0c7; }
+.status-badge--muted { color: #475467; background: #eaecf0; }
+.status-badge--info { color: var(--hh-ocean); background: rgba(11, 37, 69, 0.08); }
+.status-badge--outline { color: var(--hh-muted); background: transparent; border: 1px solid var(--hh-border); }
+
+/* Progress steps */
+.progress-steps { position: relative; margin-bottom: 2rem; }
+.progress-steps__track { position: absolute; top: 17px; right: 18px; left: 18px; height: 3px; background: var(--hh-border); border-radius: 3px; }
+.progress-steps__fill { height: 100%; background: linear-gradient(90deg, var(--hh-teal), var(--hh-coral)); border-radius: 3px; }
+.progress-steps ol { position: relative; display: flex; justify-content: space-between; margin: 0; padding: 0; list-style: none; }
+.progress-steps__item { display: flex; flex-direction: column; align-items: center; gap: 0.45rem; min-width: 0; text-align: center; }
+.progress-steps__dot {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: var(--hh-fs-sm);
+  font-weight: 800;
+  color: var(--hh-muted);
+  background: var(--hh-white);
+  border: 2px solid var(--hh-border);
+  border-radius: 50%;
+  transition: background-color var(--hh-dur), border-color var(--hh-dur), color var(--hh-dur);
+}
+.progress-steps__item.is-current .progress-steps__dot { color: var(--hh-ocean); border-color: var(--hh-coral); box-shadow: 0 0 0 4px rgba(255, 120, 90, 0.18); }
+.progress-steps__item.is-done .progress-steps__dot { color: var(--hh-white); background: var(--hh-teal-ink); border-color: var(--hh-teal-ink); }
+.progress-steps__label { font-size: var(--hh-fs-xs); font-weight: 600; color: var(--hh-muted); }
+.progress-steps__item.is-current .progress-steps__label { color: var(--hh-ocean); }
+@media (max-width: 575.98px) {
+  .progress-steps__label { display: none; }
+  .progress-steps__item.is-current .progress-steps__label { display: block; position: absolute; top: 44px; left: 0; right: 0; }
+  .progress-steps { margin-bottom: 2.75rem; }
+}
+
+/* Hold countdown */
+.hold-countdown { display: inline-flex; align-items: center; gap: 0.4rem; font-size: var(--hh-fs-sm); color: #93370d; }
+.hold-countdown.is-urgent { color: #b42318; font-weight: 600; }
+
+/* Demo payment */
+.demo-pay__banner { display: flex; gap: 0.85rem; padding: 1rem 1.1rem; margin-bottom: 1.5rem; background: rgba(0, 191, 166, 0.1); border: 1px dashed var(--hh-teal-ink); border-radius: var(--hh-radius); }
+.demo-pay__banner .bi { font-size: 1.4rem; color: var(--hh-teal-ink); }
+.demo-pay__banner strong { color: var(--hh-ocean); }
+.demo-pay__banner p { margin: 0.15rem 0 0; font-size: var(--hh-fs-sm); color: var(--hh-charcoal); }
+.demo-pay__amount { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.5rem; }
+.demo-pay__amount > span { color: var(--hh-muted); }
+.demo-pay__amount > strong { font-size: var(--hh-fs-2xl); color: var(--hh-ocean); }
+.demo-pay__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+
+/* Success animation */
+.success-check { position: relative; display: inline-grid; place-items: center; width: 96px; height: 96px; margin-bottom: 1rem; }
+.success-check__confetti { position: absolute; top: 50%; left: 50%; width: 8px; height: 12px; margin: -6px 0 0 -4px; border-radius: 2px; }

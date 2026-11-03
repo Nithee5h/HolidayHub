@@ -1,0 +1,29 @@
+.hh-field { margin-bottom: 1.1rem; }
+.hh-field__control { position: relative; }
+.hh-field__control.has-addon .form-control { padding-right: 3rem; }
+.hh-field .form-control.is-invalid { border-color: #c2410c; background-image: none; }
+.hh-field .form-control.is-invalid:focus { box-shadow: 0 0 0 0.2rem rgba(194, 65, 12, 0.2); }
+.hh-field__error {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  font-size: var(--hh-fs-sm);
+  color: #b42318;
+}
+.hh-field__toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.4rem;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-top: -19px;
+  color: var(--hh-muted);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+}
+.hh-field__toggle:hover { color: var(--hh-ocean); background: rgba(11, 37, 69, 0.06); }
+.hh-field__toggle:focus-visible { border-radius: 50%; }

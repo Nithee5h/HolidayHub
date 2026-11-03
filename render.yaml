@@ -1,0 +1,30 @@
+# Render Blueprint for the HolidayHub API (https://render.com/docs/blueprint-spec).
+# Secrets marked `sync: false` are entered in the Render dashboard, never committed.
+services:
+  - type: web
+    name: holidayhub-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB
+        value: holidayhub
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLIENT_ORIGIN
+        sync: false # e.g. https://holidayhub.vercel.app
+      - key: COOKIE_SAMESITE
+        value: lax # the web app proxies /api, so cookies stay first-party
+      - key: TRUST_PROXY
+        value: "1"
+      - key: APP_TIMEZONE
+        value: Asia/Kolkata

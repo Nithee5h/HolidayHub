@@ -1,0 +1,24 @@
+.bd-header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.bd-header__ref { margin: 0 0 0.25rem; font-size: var(--hh-fs-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--hh-teal-ink); }
+.bd-header__title { margin: 0 0 0.75rem; font-size: var(--hh-fs-3xl); }
+
+.bd-photo { aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--hh-radius-lg); box-shadow: var(--hh-shadow); }
+.bd-section-title { margin-bottom: 1rem; font-size: var(--hh-fs-xl); }
+.bd-subtitle { margin: 1.5rem 0 0.75rem; font-size: var(--hh-fs-base); font-weight: 700; }
+
+.bd-travellers { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.bd-travellers li { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; font-weight: 600; color: var(--hh-ocean); background: var(--hh-white); border: 1px solid var(--hh-border); border-radius: var(--hh-radius); }
+.bd-travellers small { margin-left: auto; font-weight: 500; color: var(--hh-muted); }
+.bd-travellers__n { display: grid; place-items: center; width: 28px; height: 28px; font-size: var(--hh-fs-xs); color: var(--hh-ocean); background: var(--hh-sand); border-radius: 50%; }
+
+.bd-summary { margin: 0; }
+.bd-summary > div { display: flex; justify-content: space-between; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--hh-border); }
+.bd-summary dt { font-weight: 500; color: var(--hh-muted); }
+.bd-summary dd { margin: 0; font-weight: 600; color: var(--hh-ocean); text-align: right; }
+.bd-summary__total { border-bottom: 0 !important; }
+.bd-summary__total dd { font-size: var(--hh-fs-xl); font-weight: 800; }
+
+.bd-payments { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.bd-payments li { display: flex; justify-content: space-between; gap: 1rem; font-size: var(--hh-fs-sm); }
+.bd-payments small { display: block; color: var(--hh-muted); }
+.bd-policy { font-size: var(--hh-fs-sm); color: var(--hh-charcoal); }

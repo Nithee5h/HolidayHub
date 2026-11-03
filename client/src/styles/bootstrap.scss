@@ -1,0 +1,27 @@
+// Only the Bootstrap 5 modules HolidayHub uses. Buttons, cards, navbars,
+// modals, dropdowns etc. are replaced by the app's own design-system
+// components, so they are not compiled into the bundle.
+
+// Configuration
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+
+// Base + layout
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/grid';
+
+// Components in use
+@import 'bootstrap/scss/tables';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/alert';
+
+// Helpers (stretched-link, visually-hidden, …) + utility classes
+@import 'bootstrap/scss/helpers';
+@import 'bootstrap/scss/utilities/api';

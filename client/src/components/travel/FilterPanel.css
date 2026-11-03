@@ -1,0 +1,66 @@
+.filter-panel { display: grid; gap: 1.5rem; }
+
+.filter-group { min-width: 0; margin: 0; padding: 0; border: 0; }
+.filter-group + .filter-group { padding-top: 1.5rem; border-top: 1px solid var(--hh-border); }
+/* Floated legend (Bootstrap reboot default) escapes the fieldset border notch. */
+.filter-group__legend {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  font-family: var(--hh-font-sans);
+  font-size: var(--hh-fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hh-ocean);
+}
+
+.filter-group__legend + * { clear: both; }
+.filter-search { position: relative; }
+.filter-search .bi {
+  position: absolute;
+  top: 50%;
+  left: 0.95rem;
+  color: var(--hh-muted);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.filter-search .form-control { padding-left: 2.5rem; border-radius: var(--hh-radius-pill); }
+
+.filter-options { display: grid; gap: 0.15rem; }
+.filter-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.45rem 0.7rem;
+  font-size: var(--hh-fs-sm);
+  color: var(--hh-charcoal);
+  border-radius: var(--hh-radius-sm);
+  cursor: pointer;
+  transition: background-color var(--hh-dur-fast), color var(--hh-dur-fast);
+}
+.filter-option:hover { background: rgba(11, 37, 69, 0.05); }
+.filter-option input {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--hh-ocean);
+  cursor: pointer;
+}
+.filter-option input:focus-visible { box-shadow: var(--hh-focus-ring); border-radius: 50%; }
+.filter-option.is-checked { font-weight: 700; color: var(--hh-ocean); background: rgba(0, 191, 166, 0.1); }
+
+.filter-label { display: block; margin-bottom: 0.4rem; font-size: var(--hh-fs-sm); font-weight: 600; color: var(--hh-charcoal); }
+.filter-clear {
+  flex: 0 0 auto;
+  width: 44px;
+  color: var(--hh-ocean);
+  background: var(--hh-white);
+  border: 1px solid var(--hh-border);
+  border-radius: var(--hh-radius-sm);
+}
+.filter-clear:hover { border-color: var(--hh-ocean); }
+.filter-hint { margin: 0.75rem 0 0; font-size: var(--hh-fs-xs); color: var(--hh-muted); }

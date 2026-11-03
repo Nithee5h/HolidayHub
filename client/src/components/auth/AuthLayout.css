@@ -1,0 +1,42 @@
+.auth {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-top: var(--hh-nav-h);
+}
+@media (min-width: 992px) {
+  .auth { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+
+.auth__media { position: relative; display: none; overflow: hidden; isolation: isolate; }
+@media (min-width: 992px) {
+  .auth__media { display: block; }
+}
+.auth__media .smart-img { position: absolute; inset: 0; z-index: -2; }
+.auth__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(11, 37, 69, 0.1) 30%, rgba(11, 37, 69, 0.85) 100%);
+}
+.auth__media-copy { position: absolute; inset: auto 0 0 0; padding: clamp(2rem, 1rem + 3vw, 4rem); }
+.auth__media-copy p { max-width: 20ch; margin: 0; font-size: var(--hh-fs-2xl); line-height: 1.2; color: var(--hh-white); }
+
+.auth__panel { display: grid; place-items: center; padding: clamp(2rem, 1rem + 4vw, 4rem) var(--hh-gutter); }
+.auth__card { width: min(440px, 100%); }
+.auth__title { margin-bottom: 0.5rem; font-size: var(--hh-fs-3xl); }
+.auth__subtitle { margin-bottom: 2rem; color: var(--hh-muted); }
+.auth__footer { margin-top: 1.75rem; padding-top: 1.25rem; text-align: center; color: var(--hh-muted); border-top: 1px solid var(--hh-border); }
+.auth__footer a { font-weight: 700; }
+
+/* Password requirement checklist + strength meter */
+.pw-meter { display: flex; gap: 0.3rem; margin: -0.5rem 0 0.5rem; }
+.pw-meter span { flex: 1; height: 5px; background: var(--hh-border); border-radius: 3px; transition: background-color var(--hh-dur); }
+.pw-meter[data-score='1'] span:nth-child(-n + 1) { background: #d92d20; }
+.pw-meter[data-score='2'] span:nth-child(-n + 2) { background: #f79009; }
+.pw-meter[data-score='3'] span:nth-child(-n + 3) { background: #12b76a; }
+.pw-meter[data-score='4'] span:nth-child(-n + 4) { background: var(--hh-teal-ink); }
+.pw-rules { display: grid; gap: 0.2rem; margin: 0 0 1.1rem; padding: 0; list-style: none; font-size: var(--hh-fs-xs); color: var(--hh-muted); }
+.pw-rules li { display: flex; align-items: center; gap: 0.4rem; }
+.pw-rules li.is-met { color: var(--hh-teal-ink); }

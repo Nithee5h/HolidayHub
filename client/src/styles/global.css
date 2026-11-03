@@ -1,0 +1,118 @@
+/* Global base styles layered on top of Bootstrap 5. */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--hh-nav-h) + 1rem);
+}
+
+body {
+  font-family: var(--hh-font-sans);
+  font-size: var(--hh-fs-base);
+  line-height: 1.65;
+  color: var(--hh-charcoal);
+  background: var(--hh-offwhite);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--hh-ocean);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.font-display {
+  font-family: var(--hh-font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.text-muted-hh { color: var(--hh-muted) !important; }
+.text-ocean { color: var(--hh-ocean) !important; }
+.text-teal { color: var(--hh-teal-ink) !important; }
+.text-coral { color: var(--hh-coral-600) !important; }
+.bg-ocean { background: var(--hh-ocean) !important; }
+.bg-sand { background: var(--hh-sand) !important; }
+
+img { max-width: 100%; }
+
+::selection { background: var(--hh-teal); color: var(--hh-ocean); }
+
+/* Visible, consistent focus rings for keyboard users only. */
+:focus { outline: none; }
+:focus-visible {
+  outline: none;
+  box-shadow: var(--hh-focus-ring);
+  border-radius: var(--hh-radius-sm);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 2000;
+  padding: 0.6rem 1rem;
+  border-radius: var(--hh-radius-sm);
+  background: var(--hh-ocean);
+  color: var(--hh-white);
+  font-weight: 600;
+  text-decoration: none;
+  transition: top var(--hh-dur) var(--hh-ease-out);
+}
+.skip-link:focus { top: 1rem; color: var(--hh-white); }
+
+/* Section rhythm */
+.section { padding-block: var(--hh-section-y); }
+.section-tight { padding-block: calc(var(--hh-section-y) * 0.6); }
+
+/* Page offset for routes without a full-bleed hero */
+.page-offset { padding-top: calc(var(--hh-nav-h) + 2.5rem); }
+
+/* Generic glass surface */
+.glass {
+  background: var(--hh-glass-bg);
+  border: 1px solid var(--hh-glass-border);
+  backdrop-filter: blur(var(--hh-glass-blur)) saturate(140%);
+  -webkit-backdrop-filter: blur(var(--hh-glass-blur)) saturate(140%);
+}
+
+.surface-card {
+  background: var(--hh-white);
+  border: 1px solid var(--hh-border);
+  border-radius: var(--hh-radius);
+  box-shadow: var(--hh-shadow-sm);
+}
+
+/* Bootstrap form refinements shared by every form in the app */
+.form-control,
+.form-select {
+  border-radius: var(--hh-radius-sm);
+  border-color: var(--hh-border);
+  padding: 0.7rem 0.95rem;
+  color: var(--hh-charcoal);
+  transition: border-color var(--hh-dur-fast), box-shadow var(--hh-dur-fast);
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--hh-teal-ink);
+  box-shadow: 0 0 0 0.2rem rgba(0, 191, 166, 0.25);
+}
+.form-label {
+  font-size: var(--hh-fs-sm);
+  font-weight: 600;
+  color: var(--hh-ocean);
+}
+
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+}
+
+/* Result grids dim slightly while a refetch is in flight (stale data shown). */
+.packages-results { transition: opacity var(--hh-dur) var(--hh-ease-out); }
+.packages-results.is-stale { opacity: 0.6; }
+
+/* Contain absolutely positioned helpers (e.g. .visually-hidden header text) inside
+   horizontally scrolling tables so they can't widen the page on small screens. */
+.table-responsive { position: relative; }

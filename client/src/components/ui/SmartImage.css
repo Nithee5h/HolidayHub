@@ -1,0 +1,30 @@
+.smart-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(110deg, #e8ecef 8%, #f5f7f8 18%, #e8ecef 33%);
+  background-size: 200% 100%;
+}
+.smart-img--loading { animation: hh-shimmer 1.4s linear infinite; }
+.smart-img--loaded { background: var(--hh-sand); }
+
+.smart-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 500ms var(--hh-ease-out), transform 700ms var(--hh-ease-out);
+}
+.smart-img--loaded img { opacity: 1; }
+
+.smart-img__fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--hh-grad-ocean);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 2rem;
+}

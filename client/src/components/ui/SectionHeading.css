@@ -1,0 +1,45 @@
+.section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.25rem 2rem;
+  margin-bottom: clamp(2rem, 1.5rem + 2vw, 3.25rem);
+}
+.section-heading--center { justify-content: center; text-align: center; }
+.section-heading--center .section-heading__text { margin-inline: auto; }
+
+.section-heading__text { max-width: 640px; }
+
+.section-heading__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: var(--hh-fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hh-teal-ink);
+}
+.section-heading__eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--hh-coral);
+}
+
+.section-heading__title {
+  font-size: var(--hh-fs-3xl);
+  margin-bottom: 0;
+}
+.section-heading__subtitle {
+  margin: 1rem 0 0;
+  font-size: var(--hh-fs-lg);
+  color: var(--hh-muted);
+}
+
+.section-heading--light .section-heading__title { color: var(--hh-white); }
+.section-heading--light .section-heading__subtitle { color: rgba(255, 255, 255, 0.78); }
+.section-heading--light .section-heading__eyebrow { color: var(--hh-teal); }

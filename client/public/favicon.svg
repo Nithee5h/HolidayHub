@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="hh-tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF9A76"/><stop offset="1" stop-color="#F0563A"/></linearGradient>
+    <linearGradient id="hh-pin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#18467A"/><stop offset="1" stop-color="#0B2545"/></linearGradient>
+    <linearGradient id="hh-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD58F"/><stop offset="1" stop-color="#FFA45E"/></linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#hh-tile)"/>
+  <path d="M32 6.5C20.4 6.5 11.5 15.4 11.5 27 11.5 41.6 32 58 32 58S52.5 41.6 52.5 27C52.5 15.4 43.6 6.5 32 6.5Z" fill="url(#hh-pin)"/>
+  <circle cx="32" cy="22.5" r="7.5" fill="url(#hh-sun)"/>
+  <path d="M19.5 32c4.2-2.8 8.3-2.8 12.5 0s8.3 2.8 12.5 0" fill="none" stroke="#00BFA6" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M22.5 39c3.2-2.2 6.3-2.2 9.5 0s6.3 2.2 9.5 0" fill="none" stroke="#00BFA6" stroke-opacity=".7" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M17.5 19.5a15.5 15.5 0 0 1 7.5-7.6" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

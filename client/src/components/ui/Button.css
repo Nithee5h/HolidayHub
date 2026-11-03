@@ -1,0 +1,102 @@
+.hh-btn {
+  --btn-bg: var(--hh-coral);
+  --btn-fg: var(--hh-ocean);
+  --btn-border: transparent;
+  --btn-shadow: 0 10px 24px -10px rgba(255, 120, 90, 0.7);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  font-family: var(--hh-font-sans);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.005em;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--btn-fg);
+  background: var(--btn-bg);
+  border: 1.5px solid var(--btn-border);
+  border-radius: var(--hh-radius-pill);
+  box-shadow: none;
+  transition:
+    transform var(--hh-dur) var(--hh-ease-out),
+    box-shadow var(--hh-dur) var(--hh-ease-out),
+    background-color var(--hh-dur-fast),
+    color var(--hh-dur-fast),
+    border-color var(--hh-dur-fast);
+}
+
+.hh-btn--sm { padding: 0.5rem 1rem; font-size: var(--hh-fs-sm); }
+.hh-btn--md { padding: 0.8rem 1.5rem; font-size: var(--hh-fs-sm); }
+.hh-btn--lg { padding: 1rem 2rem; font-size: var(--hh-fs-base); }
+.hh-btn--block { width: 100%; }
+
+.hh-btn:hover {
+  color: var(--btn-fg);
+  transform: translateY(-2px);
+  box-shadow: var(--btn-shadow);
+}
+.hh-btn:active { transform: translateY(0) scale(0.98); }
+.hh-btn:focus-visible { box-shadow: var(--hh-focus-ring); border-radius: var(--hh-radius-pill); }
+.hh-btn:disabled,
+.hh-btn[aria-disabled='true'] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.hh-btn .bi { font-size: 1.05em; line-height: 1; }
+.hh-btn__icon-end { transition: transform var(--hh-dur) var(--hh-ease-out); }
+.hh-btn:hover .hh-btn__icon-end { transform: translateX(3px); }
+
+/* Variants */
+.hh-btn--primary:hover { --btn-bg: #ff8a6f; }
+
+.hh-btn--teal {
+  --btn-bg: var(--hh-teal);
+  --btn-fg: var(--hh-ocean);
+  --btn-shadow: 0 10px 24px -10px rgba(0, 191, 166, 0.7);
+}
+
+.hh-btn--ocean {
+  --btn-bg: var(--hh-ocean);
+  --btn-fg: var(--hh-white);
+  --btn-shadow: 0 10px 24px -10px rgba(11, 37, 69, 0.6);
+}
+.hh-btn--ocean:hover { --btn-bg: var(--hh-ocean-600); }
+
+.hh-btn--glass {
+  --btn-bg: rgba(255, 255, 255, 0.14);
+  --btn-fg: var(--hh-white);
+  --btn-border: rgba(255, 255, 255, 0.45);
+  --btn-shadow: 0 10px 24px -12px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.hh-btn--glass:hover { --btn-bg: rgba(255, 255, 255, 0.26); }
+
+.hh-btn--outline {
+  --btn-bg: transparent;
+  --btn-fg: var(--hh-ocean);
+  --btn-border: rgba(11, 37, 69, 0.25);
+  --btn-shadow: 0 8px 20px -12px rgba(11, 37, 69, 0.4);
+}
+.hh-btn--outline:hover { --btn-border: var(--hh-ocean); --btn-bg: rgba(11, 37, 69, 0.04); }
+
+.hh-btn--outline-light {
+  --btn-bg: transparent;
+  --btn-fg: var(--hh-white);
+  --btn-border: rgba(255, 255, 255, 0.6);
+  --btn-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.4);
+}
+.hh-btn--outline-light:hover { --btn-bg: rgba(255, 255, 255, 0.12); --btn-border: var(--hh-white); }
+
+.hh-btn--ghost {
+  --btn-bg: transparent;
+  --btn-fg: currentColor;
+  --btn-shadow: none;
+}
+.hh-btn--ghost:hover { --btn-bg: rgba(127, 127, 127, 0.12); transform: none; }

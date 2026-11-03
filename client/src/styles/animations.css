@@ -1,0 +1,43 @@
+/*
+ * CSS-only motion: hover/focus micro-interactions and the skeleton shimmer.
+ * Orchestrated entrance/route/layout motion lives in Motion for React.
+ */
+
+@keyframes hh-shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
+}
+
+@keyframes hh-hero-zoom {
+  from { transform: scale(1.12); }
+  to { transform: scale(1.02); }
+}
+
+@keyframes hh-scroll-cue {
+  0%, 100% { transform: translateY(0); opacity: 0.9; }
+  50% { transform: translateY(6px); opacity: 0.4; }
+}
+
+.hover-lift {
+  transition: transform var(--hh-dur) var(--hh-ease-out), box-shadow var(--hh-dur) var(--hh-ease-out);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--hh-shadow-lg);
+}
+
+/*
+ * Reduced motion: neutralise CSS transitions/animations app-wide.
+ * Motion for React is handled separately via <MotionConfig reducedMotion="user">
+ * and useReducedMotion() for scroll-linked effects.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

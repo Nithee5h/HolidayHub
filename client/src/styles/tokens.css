@@ -1,0 +1,85 @@
+/*
+ * HolidayHub design tokens — the single source of truth for colour, type,
+ * spacing, radius, shadow and motion. Bootstrap variables are mapped onto
+ * these at the bottom so utilities and custom components stay in sync.
+ */
+:root {
+  /* Brand palette */
+  --hh-ocean: #0b2545;
+  --hh-ocean-600: #13315c;
+  --hh-ocean-400: #2b4a75;
+  --hh-teal: #00bfa6;
+  --hh-teal-ink: #00796b; /* teal dark enough for text on light surfaces (AA) */
+  --hh-coral: #ff785a;
+  --hh-coral-600: #f25f3f; /* icons, large display text (≥3:1) */
+  --hh-coral-ink: #b9401f; /* coral for body-size text on light surfaces (AA 4.5:1+) */
+  --hh-offwhite: #fafaf7;
+  --hh-sand: #f3efe7;
+  --hh-charcoal: #172b4d;
+  --hh-muted: #64748b;
+  --hh-border: #e4e7ec;
+  --hh-white: #ffffff;
+
+  /* Glass */
+  --hh-glass-bg: rgba(255, 255, 255, 0.14);
+  --hh-glass-bg-strong: rgba(255, 255, 255, 0.82);
+  --hh-glass-border: rgba(255, 255, 255, 0.35);
+  --hh-glass-blur: 16px;
+
+  /* Gradients */
+  --hh-grad-sunset: linear-gradient(135deg, #ff785a 0%, #ffb36b 100%);
+  --hh-grad-ocean: linear-gradient(160deg, #0b2545 0%, #13315c 55%, #00796b 130%);
+  --hh-grad-scrim: linear-gradient(180deg, rgba(11, 37, 69, 0) 35%, rgba(11, 37, 69, 0.88) 100%);
+
+  /* Typography */
+  --hh-font-sans: 'Plus Jakarta Sans', 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --hh-font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+  --hh-fs-xs: clamp(0.75rem, 0.72rem + 0.1vw, 0.8rem);
+  --hh-fs-sm: clamp(0.875rem, 0.85rem + 0.1vw, 0.925rem);
+  --hh-fs-base: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --hh-fs-lg: clamp(1.125rem, 1.06rem + 0.3vw, 1.3rem);
+  --hh-fs-xl: clamp(1.35rem, 1.2rem + 0.7vw, 1.75rem);
+  --hh-fs-2xl: clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem);
+  --hh-fs-3xl: clamp(2.25rem, 1.6rem + 3vw, 4rem);
+  --hh-fs-hero: clamp(2.6rem, 1.6rem + 5.2vw, 6rem);
+
+  /* Spacing & layout */
+  --hh-section-y: clamp(4rem, 3rem + 5vw, 7.5rem);
+  --hh-nav-h: 76px;
+  --hh-gutter: clamp(1rem, 0.5rem + 2vw, 1.5rem);
+
+  /* Radius */
+  --hh-radius-sm: 10px;
+  --hh-radius: 18px;
+  --hh-radius-lg: 28px;
+  --hh-radius-pill: 999px;
+
+  /* Elevation */
+  --hh-shadow-sm: 0 2px 8px rgba(11, 37, 69, 0.06);
+  --hh-shadow: 0 12px 32px -12px rgba(11, 37, 69, 0.22);
+  --hh-shadow-lg: 0 28px 60px -20px rgba(11, 37, 69, 0.35);
+
+  /* Motion */
+  --hh-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --hh-dur-fast: 180ms;
+  --hh-dur: 240ms;
+  --hh-dur-slow: 600ms;
+
+  /* Focus */
+  --hh-focus-ring: 0 0 0 3px var(--hh-white), 0 0 0 5.5px var(--hh-teal-ink);
+
+  /* Bootstrap bridge */
+  --bs-body-font-family: var(--hh-font-sans);
+  --bs-body-color: var(--hh-charcoal);
+  --bs-body-bg: var(--hh-offwhite);
+  --bs-secondary-color: var(--hh-muted);
+  --bs-border-color: var(--hh-border);
+  --bs-link-color: var(--hh-teal-ink);
+  --bs-link-color-rgb: 0, 121, 107;
+  --bs-link-hover-color: var(--hh-ocean);
+  --bs-link-hover-color-rgb: 11, 37, 69;
+  --bs-border-radius: var(--hh-radius-sm);
+  --bs-border-radius-lg: var(--hh-radius);
+  --bs-emphasis-color: var(--hh-ocean);
+}

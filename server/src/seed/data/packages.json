@@ -1,0 +1,851 @@
+[
+  {
+    "slug": "kerala-backwaters-escape",
+    "title": "Kerala Backwaters Escape",
+    "destination": "Kerala",
+    "country": "India",
+    "category": "Family",
+    "durationDays": 5,
+    "summary": "Drift through palm-lined canals on a private houseboat, then unwind in the misty tea hills of Munnar.",
+    "description": "A slow, scenic loop through God’s Own Country: Kochi’s spice-scented old town, the green tea estates of Munnar, and an overnight houseboat cruise on the Alleppey backwaters with home-style Kerala meals on board.",
+    "basePrice": 24999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944",
+        "alt": "Traditional houseboat on palm-fringed Kerala backwaters"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1593693411515-c20261bcad6e",
+        "alt": "Houseboat cruising a wide palm-lined backwater channel in Kerala"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive in Kochi",
+        "description": "Airport pickup, check-in and an evening walk through Fort Kochi’s Chinese fishing nets.",
+        "activities": [
+          "Fort Kochi walk",
+          "Kathakali performance"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Drive to Munnar",
+        "description": "Scenic drive past waterfalls into the tea country; afternoon at leisure.",
+        "activities": [
+          "Cheeyappara falls stop"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Munnar tea trails",
+        "description": "Guided tea-estate walk and a visit to Eravikulam National Park.",
+        "activities": [
+          "Tea museum",
+          "Eravikulam park"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Alleppey houseboat",
+        "description": "Board a private houseboat for an overnight cruise through the backwaters.",
+        "activities": [
+          "Houseboat cruise",
+          "Village canoe ride"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Depart",
+        "description": "Disembark after breakfast and transfer to Kochi airport.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "4 nights accommodation",
+      "Daily breakfast",
+      "All meals on houseboat",
+      "Private AC transfers",
+      "Sightseeing as per itinerary"
+    ],
+    "exclusions": [
+      "Flights",
+      "Entry tickets",
+      "Personal expenses",
+      "Travel insurance"
+    ],
+    "tags": [
+      "tropical",
+      "nature",
+      "culture"
+    ],
+    "featured": true,
+    "status": "published"
+  },
+  {
+    "slug": "bali-island-romance",
+    "title": "Bali Island Romance",
+    "destination": "Bali",
+    "country": "Indonesia",
+    "category": "Honeymoon",
+    "durationDays": 6,
+    "summary": "Private pool villas in Ubud, cliff-top sunsets at Uluwatu and a candlelit beach dinner for two.",
+    "description": "Designed for couples: three nights among Ubud’s rice terraces and jungle temples, followed by a beachside stay in Seminyak with a sunset Kecak performance and a private dinner on the sand.",
+    "basePrice": 64999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+        "alt": "Ulun Danu Beratan temple reflected in a misty lake in Bali"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1",
+        "alt": "Traveller framed by the Gates of Heaven at Lempuyang temple, Bali, reflected below"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1555400038-63f5ba517a47",
+        "alt": "Terraced green rice fields among palm trees in Bali"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
+        "alt": "Thatched villas around a turquoise pool surrounded by palms"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Welcome to Bali",
+        "description": "Private transfer to your Ubud pool villa and a floral bath ritual.",
+        "activities": [
+          "Couple spa welcome"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Ubud highlights",
+        "description": "Tegallalang rice terraces, Sacred Monkey Forest and Ubud art market.",
+        "activities": [
+          "Rice terraces",
+          "Monkey Forest"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Temples & lakes",
+        "description": "Ulun Danu Beratan temple and a swing over the jungle canopy.",
+        "activities": [
+          "Ulun Danu temple",
+          "Jungle swing"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Seminyak beach",
+        "description": "Transfer to Seminyak; afternoon by the sea.",
+        "activities": [
+          "Beach club access"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Uluwatu sunset",
+        "description": "Cliff-top Uluwatu temple, Kecak fire dance and a candlelit beach dinner.",
+        "activities": [
+          "Kecak dance",
+          "Private dinner"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Depart",
+        "description": "Leisure morning and airport transfer.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "5 nights in pool villas",
+      "Daily breakfast",
+      "One private dinner",
+      "Private transfers",
+      "Couple spa session"
+    ],
+    "exclusions": [
+      "International flights",
+      "Visa on arrival fees",
+      "Lunches",
+      "Travel insurance"
+    ],
+    "tags": [
+      "romantic",
+      "tropical",
+      "beach"
+    ],
+    "featured": true,
+    "status": "published"
+  },
+  {
+    "slug": "maldives-overwater-luxury",
+    "title": "Maldives Overwater Luxury",
+    "destination": "Maldives",
+    "country": "Maldives",
+    "category": "Luxury",
+    "durationDays": 5,
+    "summary": "Four nights in an overwater villa with seaplane transfers, house-reef snorkelling and all-inclusive dining.",
+    "description": "Step from your deck straight into the lagoon. This all-inclusive island stay pairs seaplane arrivals with guided snorkelling, a sandbank picnic and a sunset dolphin cruise.",
+    "basePrice": 149999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8",
+        "alt": "Aerial view of overwater villas in a turquoise Maldivian lagoon"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1540202404-a2f29016b523",
+        "alt": "Aerial view of a jetty leading to overwater villas over a shallow Maldivian reef"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1512100356356-de1b84283e18",
+        "alt": "Seaplane moored beside a palm-covered island with a white sand spit in the Maldives"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Seaplane arrival",
+        "description": "Scenic seaplane flight from Malé to your island resort.",
+        "activities": [
+          "Seaplane transfer"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "House reef",
+        "description": "Guided snorkelling with turtles and reef fish.",
+        "activities": [
+          "Snorkel safari"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Sandbank picnic",
+        "description": "Private boat to a sandbank for a picnic lunch.",
+        "activities": [
+          "Sandbank lunch"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Dolphin sunset",
+        "description": "Spa morning and an evening dolphin-spotting cruise.",
+        "activities": [
+          "Spa",
+          "Dolphin cruise"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Depart",
+        "description": "Breakfast over the water and seaplane back to Malé.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "4 nights overwater villa",
+      "All-inclusive meals & drinks",
+      "Return seaplane transfers",
+      "Snorkel equipment"
+    ],
+    "exclusions": [
+      "International flights",
+      "Green tax",
+      "Diving courses",
+      "Travel insurance"
+    ],
+    "tags": [
+      "romantic",
+      "tropical",
+      "beach"
+    ],
+    "featured": true,
+    "status": "published"
+  },
+  {
+    "slug": "swiss-alps-explorer",
+    "title": "Swiss Alps Explorer",
+    "destination": "Switzerland",
+    "country": "Switzerland",
+    "category": "Adventure",
+    "durationDays": 7,
+    "summary": "Glacier hikes, cogwheel railways and the waterfall valley of Lauterbrunnen on a Swiss Travel Pass.",
+    "description": "An active alpine week from Zurich to the Bernese Oberland: ride panoramic trains, hike above Grindelwald, take a cable car to the Schilthorn and paddle on Lake Brienz.",
+    "basePrice": 189999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99",
+        "alt": "Lauterbrunnen valley with chalets, cliffs and a waterfall in Switzerland"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95",
+        "alt": "Green alpine meadow and lake beneath jagged snow-capped peaks"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Zurich arrival",
+        "description": "Check in and explore the old town on foot.",
+        "activities": []
+      },
+      {
+        "day": 2,
+        "title": "To Interlaken",
+        "description": "Panoramic train to Interlaken via Lucerne.",
+        "activities": [
+          "Chapel Bridge stop"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Lauterbrunnen valley",
+        "description": "Hike among 72 waterfalls and visit Trümmelbach Falls.",
+        "activities": [
+          "Valley hike"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Schilthorn summit",
+        "description": "Cable cars to the Piz Gloria summit with 200+ peak views.",
+        "activities": [
+          "Cable car"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Grindelwald First",
+        "description": "Cliff walk and optional mountain-cart descent.",
+        "activities": [
+          "First Cliff Walk"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Lake Brienz",
+        "description": "Kayak on turquoise Lake Brienz; farewell fondue dinner.",
+        "activities": [
+          "Kayaking",
+          "Fondue dinner"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Depart",
+        "description": "Train back to Zurich airport.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "6 nights 3★ hotels",
+      "Daily breakfast",
+      "Swiss Travel Pass (6 days)",
+      "Schilthorn excursion",
+      "One fondue dinner"
+    ],
+    "exclusions": [
+      "International flights",
+      "Schengen visa",
+      "Lunches & most dinners",
+      "Travel insurance"
+    ],
+    "tags": [
+      "mountains",
+      "nature",
+      "hiking"
+    ],
+    "featured": true,
+    "status": "published"
+  },
+  {
+    "slug": "goa-weekend-beach-break",
+    "title": "Goa Weekend Beach Break",
+    "destination": "Goa",
+    "country": "India",
+    "category": "Weekend Getaways",
+    "durationDays": 3,
+    "summary": "A breezy long weekend of North Goa beaches, Old Goa churches and a sunset river cruise.",
+    "description": "Perfect for a quick reset: stay near Candolim beach, explore UNESCO-listed Old Goa, sample Goan cuisine at a heritage home and cruise the Mandovi at sunset.",
+    "basePrice": 12999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2",
+        "alt": "Palm-lined beach and turquoise sea in Goa"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1587922546307-776227941871",
+        "alt": "Colourful wooden beach huts beneath tall palm trees"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Beach arrival",
+        "description": "Check in near Candolim and spend the evening on the sand.",
+        "activities": [
+          "Beach sunset"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Old Goa & Panjim",
+        "description": "Basilica of Bom Jesus, Fontainhas Latin quarter and a Mandovi sunset cruise.",
+        "activities": [
+          "Heritage walk",
+          "River cruise"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Depart",
+        "description": "Leisure morning and checkout.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "2 nights beach resort",
+      "Daily breakfast",
+      "Airport/rail transfers",
+      "Sunset cruise"
+    ],
+    "exclusions": [
+      "Travel to Goa",
+      "Water sports",
+      "Lunches & dinners"
+    ],
+    "tags": [
+      "beach",
+      "tropical",
+      "culture"
+    ],
+    "featured": true,
+    "status": "published"
+  },
+  {
+    "slug": "manali-snow-trek",
+    "title": "Manali Snow Trek",
+    "destination": "Manali",
+    "country": "India",
+    "category": "Adventure",
+    "durationDays": 6,
+    "summary": "Guided Himalayan trek through cedar forests to snowfields, with camping under the stars.",
+    "description": "A beginner-friendly guided trek from Manali through Solang and the Beas Kund trail. Certified trek leaders, camping gear and mountain meals are included.",
+    "basePrice": 18499,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
+        "alt": "Trekker on a snowy Himalayan ridge near Manali"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1605649487212-47bdab064df7",
+        "alt": "Pine trees in front of a snowy Himalayan mountain range"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b",
+        "alt": "Himalayan peaks glowing pink at sunset"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Manali",
+        "description": "Check in, gear check and briefing with your trek leader.",
+        "activities": [
+          "Old Manali walk"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Acclimatise",
+        "description": "Hadimba temple and a short acclimatisation hike to Jogini falls.",
+        "activities": [
+          "Jogini falls hike"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Trek to Dhundi",
+        "description": "Drive to Solang and trek to Dhundi campsite.",
+        "activities": [
+          "Camping"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Bakarthach",
+        "description": "Ascend through meadows to the Bakarthach base.",
+        "activities": [
+          "Glacier views"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Beas Kund & return",
+        "description": "Morning push to Beas Kund lake; descend to Solang and drive back.",
+        "activities": [
+          "Summit lake"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Depart",
+        "description": "Breakfast and departure from Manali.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "2 nights hotel + 3 nights camping",
+      "All meals on trek",
+      "Certified trek leader",
+      "Tents & sleeping bags",
+      "Permits"
+    ],
+    "exclusions": [
+      "Travel to Manali",
+      "Personal trekking gear",
+      "Porter for personal bags",
+      "Insurance"
+    ],
+    "tags": [
+      "mountains",
+      "hiking",
+      "nature"
+    ],
+    "featured": true,
+    "status": "published"
+  },
+  {
+    "slug": "dubai-city-lights",
+    "title": "Dubai City Lights",
+    "destination": "Dubai",
+    "country": "United Arab Emirates",
+    "category": "Family",
+    "durationDays": 5,
+    "summary": "Burj Khalifa views, a desert safari with dinner and a day at a family theme park.",
+    "description": "A family favourite: modern skylines and old souks, a dune-bashing desert safari with a barbecue dinner, a dhow cruise along Dubai Marina and a full day at a theme park.",
+    "basePrice": 54999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+        "alt": "Dubai skyline with Burj Khalifa at sunset"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1546412414-e1885259563a",
+        "alt": "Burj Al Arab hotel seen from the beach in Dubai"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090",
+        "alt": "Aerial view of Burj Al Arab and the Dubai coastline"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Dubai",
+        "description": "Transfer to hotel; evening dhow dinner cruise at the Marina.",
+        "activities": [
+          "Dhow cruise"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "City tour",
+        "description": "Old Dubai souks, abra ride and Burj Khalifa observation deck.",
+        "activities": [
+          "Burj Khalifa",
+          "Gold souk"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Desert safari",
+        "description": "Afternoon dune drive, camel ride and barbecue dinner at a desert camp.",
+        "activities": [
+          "Dune bashing",
+          "Camel ride"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Theme park day",
+        "description": "Full day at a family theme park of your choice.",
+        "activities": [
+          "Theme park pass"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Depart",
+        "description": "Shopping time and airport transfer.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "4 nights 4★ hotel",
+      "Daily breakfast",
+      "Desert safari with dinner",
+      "Burj Khalifa tickets",
+      "Shared transfers"
+    ],
+    "exclusions": [
+      "International flights",
+      "UAE visa",
+      "Tourism dirham fee",
+      "Travel insurance"
+    ],
+    "tags": [
+      "city",
+      "desert"
+    ],
+    "featured": false,
+    "status": "published"
+  },
+  {
+    "slug": "paris-romantic-getaway",
+    "title": "Paris Romantic Getaway",
+    "destination": "Paris",
+    "country": "France",
+    "category": "Honeymoon",
+    "durationDays": 6,
+    "summary": "Seine cruises, Montmartre mornings, the Louvre and an evening at the Eiffel Tower.",
+    "description": "A boutique Parisian stay in Le Marais with skip-the-line museum entry, a Seine dinner cruise, a day trip to Versailles and plenty of time for cafés and bookshops.",
+    "basePrice": 124999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+        "alt": "Eiffel Tower above the Seine at dusk in Paris"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1431274172761-fca41d930114",
+        "alt": "Eiffel Tower under a clear blue sky in Paris"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a",
+        "alt": "Ornate lamps on Pont Alexandre III over the Seine at twilight"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b",
+        "alt": "Aerial view of the Arc de Triomphe and Paris boulevards"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Bonjour Paris",
+        "description": "Check in to a boutique hotel in Le Marais.",
+        "activities": []
+      },
+      {
+        "day": 2,
+        "title": "Art & icons",
+        "description": "Skip-the-line Louvre visit and an evening at the Eiffel Tower summit.",
+        "activities": [
+          "Louvre",
+          "Eiffel Tower"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Montmartre",
+        "description": "Sacré-Cœur, artists’ square and a crêpe-making class.",
+        "activities": [
+          "Crêpe class"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Versailles",
+        "description": "Day trip to the Palace and Gardens of Versailles.",
+        "activities": [
+          "Versailles palace"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Seine cruise",
+        "description": "Free day; candlelit Seine dinner cruise in the evening.",
+        "activities": [
+          "Dinner cruise"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Au revoir",
+        "description": "Breakfast and airport transfer.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "5 nights boutique hotel",
+      "Daily breakfast",
+      "Museum & Versailles tickets",
+      "Seine dinner cruise",
+      "Airport transfers"
+    ],
+    "exclusions": [
+      "International flights",
+      "Schengen visa",
+      "City tax",
+      "Travel insurance"
+    ],
+    "tags": [
+      "romantic",
+      "city",
+      "culture"
+    ],
+    "featured": false,
+    "status": "published"
+  },
+  {
+    "slug": "goa-budget-backpacker",
+    "title": "Goa Budget Backpacker",
+    "destination": "Goa",
+    "country": "India",
+    "category": "Budget",
+    "durationDays": 4,
+    "summary": "Hostel stays, scooter rental and a South Goa beach hop for travellers on a budget.",
+    "description": "Stretch your rupees further: social hostel stays in Anjuna and Palolem, a rented scooter for exploring and a spice-plantation lunch.",
+    "basePrice": 8999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1587922546307-776227941871",
+        "alt": "Colourful wooden beach huts beneath tall palm trees"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2",
+        "alt": "Palm-lined beach and turquoise sea in Goa"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Anjuna arrival",
+        "description": "Check in to a hostel and explore the flea-market lanes.",
+        "activities": []
+      },
+      {
+        "day": 2,
+        "title": "North Goa ride",
+        "description": "Scooter loop to Chapora Fort and Vagator cliffs.",
+        "activities": [
+          "Scooter rental"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "South to Palolem",
+        "description": "Spice-plantation lunch en route to Palolem beach.",
+        "activities": [
+          "Spice plantation"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Depart",
+        "description": "Morning kayak and departure.",
+        "activities": [
+          "Kayak"
+        ]
+      }
+    ],
+    "inclusions": [
+      "3 nights hostel (dorm)",
+      "Scooter rental (2 days)",
+      "Spice plantation lunch"
+    ],
+    "exclusions": [
+      "Travel to Goa",
+      "Fuel",
+      "Meals not mentioned"
+    ],
+    "tags": [
+      "beach",
+      "tropical"
+    ],
+    "featured": false,
+    "status": "published"
+  },
+  {
+    "slug": "manali-weekend-escape",
+    "title": "Manali Weekend Escape",
+    "destination": "Manali",
+    "country": "India",
+    "category": "Weekend Getaways",
+    "durationDays": 3,
+    "summary": "Cosy riverside cottage, Solang Valley snow day and cafés in Old Manali.",
+    "description": "A relaxed mountain weekend with a riverside cottage stay, a day of snow activities in Solang Valley and evenings in Old Manali’s cafés.",
+    "basePrice": 9999,
+    "currency": "INR",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1597074866923-dc0589150358",
+        "alt": "Hillside town of colourful houses beneath forested Himalayan slopes"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1605649487212-47bdab064df7",
+        "alt": "Pine trees in front of a snowy Himalayan mountain range"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b",
+        "alt": "Himalayan peaks glowing pink at sunset"
+      }
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Manali",
+        "description": "Check in to a riverside cottage; evening in Old Manali.",
+        "activities": [
+          "Café hopping"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Solang Valley",
+        "description": "Snow activities and ropeway ride at Solang Valley.",
+        "activities": [
+          "Ropeway",
+          "Snow play"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Depart",
+        "description": "Hadimba temple visit and departure.",
+        "activities": []
+      }
+    ],
+    "inclusions": [
+      "2 nights cottage stay",
+      "Breakfast & dinner",
+      "Solang Valley transfer"
+    ],
+    "exclusions": [
+      "Travel to Manali",
+      "Activity fees",
+      "Lunches"
+    ],
+    "tags": [
+      "mountains",
+      "nature"
+    ],
+    "featured": false,
+    "status": "published"
+  }
+]

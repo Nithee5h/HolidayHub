@@ -1,0 +1,35 @@
+.booking-summary { padding: 1.6rem; }
+@media (min-width: 992px) {
+  .booking-summary--sticky { position: sticky; top: calc(var(--hh-nav-h) + 1.25rem); }
+}
+
+.booking-summary__label { margin: 0; font-size: var(--hh-fs-sm); color: var(--hh-muted); }
+.booking-summary__price { margin: 0.1rem 0 1.25rem; font-size: var(--hh-fs-2xl); font-weight: 800; color: var(--hh-ocean); }
+.booking-summary__price span { font-size: var(--hh-fs-sm); font-weight: 500; color: var(--hh-muted); }
+
+.booking-summary__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--hh-border);
+}
+.booking-summary__key { display: inline-flex; align-items: center; gap: 0.5rem; margin: 0; font-size: var(--hh-fs-sm); font-weight: 600; color: var(--hh-charcoal); }
+.booking-summary__key .bi { color: var(--hh-coral-ink); }
+.booking-summary__value { font-size: var(--hh-fs-sm); font-weight: 600; color: var(--hh-ocean); text-align: right; }
+.booking-summary__stepper { width: 132px; }
+
+.booking-summary__total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.25rem;
+  padding: 1rem 0 0.25rem;
+  border-top: 1px dashed var(--hh-border);
+  overflow: hidden;
+}
+.booking-summary__total span { color: var(--hh-muted); font-size: var(--hh-fs-sm); }
+.booking-summary__total strong { font-size: var(--hh-fs-xl); color: var(--hh-ocean); }
+.booking-summary__note { margin: 0 0 1.25rem; font-size: var(--hh-fs-xs); color: var(--hh-muted); }

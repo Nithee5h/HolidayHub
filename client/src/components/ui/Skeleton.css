@@ -1,0 +1,7 @@
+.hh-skeleton {
+  display: block;
+  border-radius: var(--hh-radius-sm);
+  background: linear-gradient(110deg, #e8ecef 8%, #f5f7f8 18%, #e8ecef 33%);
+  background-size: 200% 100%;
+  animation: hh-shimmer 1.4s linear infinite;
+}

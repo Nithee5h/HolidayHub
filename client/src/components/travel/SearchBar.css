@@ -1,0 +1,88 @@
+.search-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: var(--hh-radius-lg);
+}
+
+@media (min-width: 576px) {
+  .search-bar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .search-bar__field--destination,
+  .search-bar__submit { grid-column: 1 / -1; }
+}
+
+@media (min-width: 992px) {
+  .search-bar {
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.95fr) minmax(0, 1.1fr) auto;
+    align-items: stretch;
+    padding: 0.75rem;
+    border-radius: var(--hh-radius-lg);
+  }
+  .search-bar__field--destination,
+  .search-bar__submit { grid-column: auto; }
+}
+
+.search-bar--glass {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.55);
+}
+.search-bar--solid {
+  background: var(--hh-white);
+  border: 1px solid var(--hh-border);
+  box-shadow: var(--hh-shadow);
+}
+
+.search-bar__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+  min-width: 0;
+  padding: 0.6rem 1rem;
+  border-radius: var(--hh-radius);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1.5px solid transparent;
+  transition: border-color var(--hh-dur-fast), box-shadow var(--hh-dur-fast);
+}
+.search-bar--solid .search-bar__field { background: var(--hh-offwhite); border-color: var(--hh-border); }
+.search-bar__field:focus-within {
+  border-color: var(--hh-teal-ink);
+  box-shadow: 0 0 0 3px rgba(0, 191, 166, 0.25);
+}
+
+.search-bar__field label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--hh-muted);
+}
+.search-bar__field label .bi { color: var(--hh-coral-600); font-size: 0.85rem; }
+
+.search-bar__field input,
+.search-bar__field select {
+  width: 100%;
+  min-width: 0;
+  padding: 0.15rem 0;
+  font: inherit;
+  font-weight: 600;
+  color: var(--hh-ocean);
+  background: transparent;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+.search-bar__field input::placeholder { color: #8a96a8; font-weight: 500; }
+.search-bar__field input:focus-visible,
+.search-bar__field select:focus-visible { box-shadow: none; }
+.search-bar__field select { cursor: pointer; appearance: auto; }
+.search-bar__field .hh-stepper button { width: 28px; height: 28px; }
+
+.search-bar__submit { border-radius: var(--hh-radius); min-height: 58px; }

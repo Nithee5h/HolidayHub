@@ -1,0 +1,19 @@
+.hh-dialog { position: fixed; inset: 0; z-index: 1060; display: grid; place-items: center; padding: 1rem; }
+.hh-dialog__backdrop { position: absolute; inset: 0; background: rgba(11, 37, 69, 0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.hh-dialog__panel {
+  position: relative;
+  width: min(460px, 100%);
+  padding: 1.75rem;
+  background: var(--hh-white);
+  border-radius: var(--hh-radius-lg);
+  box-shadow: var(--hh-shadow-lg);
+}
+.hh-dialog__icon { display: inline-grid; place-items: center; width: 48px; height: 48px; margin-bottom: 1rem; font-size: 1.35rem; border-radius: 14px; }
+.hh-dialog__icon--danger { color: #b42318; background: rgba(217, 45, 32, 0.1); }
+.hh-dialog__icon--neutral { color: var(--hh-ocean); background: rgba(11, 37, 69, 0.08); }
+.hh-dialog__title { margin-bottom: 0.5rem; font-size: var(--hh-fs-xl); }
+.hh-dialog__body { color: var(--hh-muted); }
+.hh-dialog__body p:last-child { margin-bottom: 0; }
+.hh-dialog__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.6rem; margin-top: 1.5rem; }
+.hh-btn--danger { --btn-bg: #b42318; --btn-fg: var(--hh-white); --btn-shadow: 0 10px 24px -10px rgba(180, 35, 24, 0.6); }
+.hh-btn--danger:hover { --btn-bg: #912018; }

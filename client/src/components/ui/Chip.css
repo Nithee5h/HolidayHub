@@ -1,0 +1,46 @@
+.hh-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.1rem;
+  font-size: var(--hh-fs-sm);
+  font-weight: 600;
+  color: var(--hh-ocean);
+  background: var(--hh-white);
+  border: 1.5px solid var(--hh-border);
+  border-radius: var(--hh-radius-pill);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--hh-dur-fast), color var(--hh-dur-fast), border-color var(--hh-dur-fast),
+    transform var(--hh-dur) var(--hh-ease-out);
+}
+.hh-chip:hover { border-color: var(--hh-ocean); transform: translateY(-1px); }
+.hh-chip.is-active {
+  color: var(--hh-white);
+  background: var(--hh-ocean);
+  border-color: var(--hh-ocean);
+}
+.hh-chip:focus-visible { border-radius: var(--hh-radius-pill); }
+
+.hh-chip--static {
+  cursor: default;
+  padding: 0.3rem 0.75rem;
+  font-size: var(--hh-fs-xs);
+  background: var(--hh-sand);
+  border-color: transparent;
+}
+.hh-chip--static:hover { transform: none; border-color: transparent; }
+
+/* Horizontal chip strip: scrolls on small screens, wraps from md up. */
+.chip-row {
+  display: flex;
+  gap: 0.6rem;
+  margin: -1rem 0 2rem;
+  padding-bottom: 0.4rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.chip-row::-webkit-scrollbar { display: none; }
+@media (min-width: 768px) {
+  .chip-row { flex-wrap: wrap; overflow: visible; }
+}

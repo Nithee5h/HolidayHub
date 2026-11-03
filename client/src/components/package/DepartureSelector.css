@@ -1,0 +1,74 @@
+.departures { display: grid; gap: 0.75rem; margin: 0; padding: 0; border: 0; }
+
+.departure {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--hh-white);
+  border: 1.5px solid var(--hh-border);
+  border-radius: var(--hh-radius);
+  cursor: pointer;
+  transition: border-color var(--hh-dur-fast), box-shadow var(--hh-dur) var(--hh-ease-out), transform var(--hh-dur) var(--hh-ease-out);
+}
+.departure:hover:not(.is-disabled) { border-color: rgba(11, 37, 69, 0.35); transform: translateY(-1px); }
+.departure.is-selected { border-color: var(--hh-teal-ink); box-shadow: 0 0 0 3px rgba(0, 191, 166, 0.2); }
+.departure.is-disabled { cursor: not-allowed; background: var(--hh-offwhite); }
+.departure.is-disabled .departure__dates,
+.departure.is-disabled .departure__price { opacity: 0.55; }
+
+/* Native radio stays focusable/announced; the custom check is decorative. */
+.departure input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.departure:has(input:focus-visible) { box-shadow: var(--hh-focus-ring); }
+
+.departure__check {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  color: transparent;
+  border: 2px solid var(--hh-border);
+  border-radius: 50%;
+  transition: background-color var(--hh-dur-fast), border-color var(--hh-dur-fast), color var(--hh-dur-fast);
+}
+.departure.is-selected .departure__check { color: var(--hh-white); background: var(--hh-teal-ink); border-color: var(--hh-teal-ink); }
+
+.departure__dates strong,
+.departure__dates small { display: block; line-height: 1.3; }
+.departure__dates strong { color: var(--hh-ocean); }
+.departure__dates small { color: var(--hh-muted); }
+
+.departure__meta { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; text-align: right; }
+.departure__price { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 800; color: var(--hh-ocean); }
+.departure__peak {
+  padding: 0.1rem 0.45rem;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hh-coral-ink);
+  background: rgba(255, 120, 90, 0.14);
+  border-radius: var(--hh-radius-pill);
+}
+.departure__seats { font-size: var(--hh-fs-xs); font-weight: 600; color: var(--hh-teal-ink); }
+.departure__seats.is-low { color: var(--hh-coral-ink); }
+.departure__seats.is-out { color: var(--hh-muted); }
+
+.departures-empty {
+  display: flex;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 1rem 1.1rem;
+  color: var(--hh-charcoal);
+  background: var(--hh-sand);
+  border-radius: var(--hh-radius);
+}
+.departures-empty .bi { color: var(--hh-coral-ink); }
+
+@media (max-width: 400px) {
+  .departure { grid-template-columns: auto 1fr; }
+  .departure__meta { grid-column: 2; align-items: flex-start; text-align: left; flex-direction: row; gap: 0.75rem; }
+}
